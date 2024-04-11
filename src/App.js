@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import RegisterForm from "./RegisterForm";
+import SampleForm from "./SampleForm";
+import DatePicker from "./DatePicker";
+import ApplicationPage from "./ApplicationPage";
+import { ApplicationCountProvider } from "./ApplicationCountContext";
+import Overlay from "./OverlayComponent";
+import Tabs from "./Tabs";
+import ToggleButton from "./ToggleButton";
+import AcademicDrop from "./AcademicDrop";
+import EditBlock from "./EditBlock";
+import FormShow from "./FormShow";
 
 function App() {
+  // const [data, setData] = React.useState(null);
+
+  // React.useEffect(() => {
+  //   fetch("/api")
+  //     .then((res) => res.json())
+  //     .then((data) => setData(data.message));
+  // }, []);
+
   return (
+    <ApplicationCountProvider>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <RegisterForm></RegisterForm>
+      {/* <ApplicationPage></ApplicationPage> */}
+      {/* <SampleForm></SampleForm> */}
+      {/* <DatePicker></DatePicker> */}
+      {/* <Overlay></Overlay> */}
+      {/* <Tabs></Tabs> */}
+      {/* <ToggleButton></ToggleButton> */}
+      {/* <AcademicDrop></AcademicDrop> */}
+      {/* <EditBlock></EditBlock> */}
+      {/* <FormShow></FormShow> */}
     </div>
+    </ApplicationCountProvider>
   );
 }
 

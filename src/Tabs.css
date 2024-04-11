@@ -1,0 +1,14 @@
+.p-sec-3{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    border: 1px solid #cfcfcf;
+    border-radius: 9px;
+}
+.info-category{
+    border-right: 1px solid  #cfcfcf;
+    padding: 15px 45px;
+    width: 25%;
+    cursor: pointer;
+    background-color: rgb(236, 236, 236);
+}
